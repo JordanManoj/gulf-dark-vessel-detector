@@ -14,6 +14,7 @@ data/processed/
 runs/
 *.pt
 !results/**
+results/figures/ossdd_preview/
 
 # Python
 __pycache__/

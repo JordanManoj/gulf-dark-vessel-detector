@@ -92,6 +92,7 @@ More: `results/failures/` (CFAR vs YOLO side by side) and `presentation/figures/
 - **Gridded AIS:** ~1 km cells make dark counts a **lower bound** in busy areas.
 - **Dark flag not scored per ship** yet: needs xView3 imagery (123 GB).
 - **Next:** xView3 dark-flag scoring; YOLO26s and a small-object head on a 16 GB GPU; SAR-pretrained backbone; label a few Gulf chips.
+
 ---
 
 ## Pipeline
