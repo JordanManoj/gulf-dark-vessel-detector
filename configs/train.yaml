@@ -1,0 +1,26 @@
+# Fine-tuning hyperparameters, shared by every model in the comparison (DECISIONS.md D10, D16).
+# Only `model` changes between runs, so differences in results come from the architecture.
+
+imgsz: 640          # native-resolution chips; never resize (D07)
+epochs: 40
+patience: 10        # early stop on val fitness
+batch: 16
+optimizer: auto
+cos_lr: true
+seed: 0
+deterministic: true
+workers: 4
+max_det: 600        # busy anchorages can exceed the default 300 per tile
+
+# --- Augmentation, adapted to SAR (D16) ---
+hsv_h: 0.0          # channels are VV / VH / ratio, not colours: hue/saturation shifts are meaningless
+hsv_s: 0.0
+hsv_v: 0.1          # mild brightness jitter, mimics small calibration / processing differences (Gulf shift)
+degrees: 0.0        # rotating 10 px boxes only inflates them
+translate: 0.1
+scale: 0.2          # default 0.5 would shrink 3 px ships to ~1 px
+fliplr: 0.5
+flipud: 0.5         # radar images have no "up"; vertical flips are as valid as horizontal ones
+mosaic: 1.0         # more context diversity per batch (land, sea states)
+close_mosaic: 10    # last epochs on un-mosaicked chips, as at inference
+mixup: 0.0          # blending two SAR images creates physically impossible backscatter

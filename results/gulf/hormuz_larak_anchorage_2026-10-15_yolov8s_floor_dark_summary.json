@@ -1,0 +1,13 @@
+{
+ "scene": "hormuz_larak_anchorage_2026-10-15.tif",
+ "acquisition_hour_utc": 2,
+ "detections": 40,
+ "ais_matched": 24,
+ "dark_candidates": 16,
+ "gfw_sar_detections": {
+  "matched": 13,
+  "unmatched": 17
+ },
+ "our_detections_near_a_gfw_detection": 30,
+ "method": "AIS presence (GFW, 0.01 deg cells, +-1 h, +-1 cell) - cell-level, not per-ship"
+}

@@ -1,0 +1,25 @@
+# Raw / large data (see data/README.md for how to get it)
+data/raw/
+data/interim/
+data/processed/
+*.SAFE/
+*.zip
+*.tif
+*.tiff
+
+# Credentials
+.env
+
+# Training artefacts
+runs/
+*.pt
+!results/**
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Crash logs
+*.stackdump

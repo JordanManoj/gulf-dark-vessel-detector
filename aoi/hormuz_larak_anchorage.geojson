@@ -1,0 +1,14 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strait of Hormuz: Larak / Hormuz island anchorage",
+        "note": "Approx. 25 x 24 km. Chosen from GFW AIS density on 15 Oct 2026 (results/figures/hormuz_ais_density_2026-10-15.png): the original open-strait box had almost no traffic; the busiest offshore cluster is the anchorage south of Larak / Hormuz islands (Bandar Abbas approaches).",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[56.25, 26.80], [56.50, 26.80], [56.50, 27.02], [56.25, 27.02], [56.25, 26.80]]]}
+    }
+  ]
+}

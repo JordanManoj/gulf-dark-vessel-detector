@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khalifa Port / Abu Dhabi approaches",
+        "note": "Approx. 24 x 24 km box around Khalifa Port (~24.81N, 54.64E) incl. the dredged approach channel and anchorage. Sized to fit one Sentinel Hub Process API request at 10 m (max 2500 x 2500 px). Verify visually in Copernicus Browser before final runs.",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[54.52, 24.70], [54.76, 24.70], [54.76, 24.92], [54.52, 24.92], [54.52, 24.70]]]
+      }
+    }
+  ]
+}

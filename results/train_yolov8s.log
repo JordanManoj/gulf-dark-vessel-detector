@@ -1,0 +1,48 @@
+New https://pypi.org/project/ultralytics/8.4.184 available  Update with 'pip install -U ultralytics'
+Ultralytics 8.4.56  Python-3.14.0 torch-2.14.1+cu126 CUDA:0 (NVIDIA GeForce GTX 1650, 4096MiB)
+[34m[1mengine\trainer: [0magnostic_nms=False, amp=True, angle=1.0, augment=False, auto_augment=randaugment, batch=8, bgr=0.0, box=7.5, cache=False, cfg=None, classes=None, close_mosaic=10, cls=0.5, cls_pw=0.0, compile=False, conf=None, copy_paste=0.0, copy_paste_mode=flip, cos_lr=True, cutmix=0.0, data=data\processed\ossdd\data.yaml, degrees=0.0, deterministic=True, device=None, dfl=1.5, dnn=False, dropout=0.0, dynamic=False, embed=None, end2end=None, epochs=40, erasing=0.4, exist_ok=False, fliplr=0.5, flipud=0.5, format=torchscript, fraction=1.0, freeze=None, half=False, hsv_h=0.0, hsv_s=0.0, hsv_v=0.1, imgsz=640, int8=False, iou=0.7, keras=False, kobj=1.0, line_width=None, lr0=0.01, lrf=0.01, mask_ratio=4, max_det=600, mixup=0.0, mode=train, model=models/yolov8s.pt, momentum=0.937, mosaic=1.0, multi_scale=0.0, name=yolov8s, nbs=64, nms=False, opset=None, optimize=False, optimizer=auto, overlap_mask=True, patience=10, perspective=0.0, plots=True, pose=12.0, pretrained=True, profile=False, project=C:\Users\jorda\Downloads\Dark Vessel Detector\runs, rect=False, resume=False, retina_masks=False, rle=1.0, save=True, save_conf=False, save_crop=False, save_dir=C:\Users\jorda\Downloads\Dark Vessel Detector\runs\yolov8s, save_frames=False, save_json=False, save_period=-1, save_txt=False, scale=0.2, seed=0, shear=0.0, show=False, show_boxes=True, show_conf=True, show_labels=True, simplify=True, single_cls=False, source=None, split=val, stream_buffer=False, task=detect, time=None, tracker=botsort.yaml, translate=0.1, val=True, verbose=True, vid_stride=1, visualize=False, warmup_bias_lr=0.1, warmup_epochs=3.0, warmup_momentum=0.8, weight_decay=0.0005, workers=2, workspace=None
+Overriding model.yaml nc=80 with nc=1
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]                 
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]                
+  2                  -1  1     29056  ultralytics.nn.modules.block.C2f             [64, 64, 1, True]             
+  3                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  4                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]           
+  5                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]              
+  6                  -1  2    788480  ultralytics.nn.modules.block.C2f             [256, 256, 2, True]           
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]              
+  8                  -1  1   1838080  ultralytics.nn.modules.block.C2f             [512, 512, 1, True]           
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]                 
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 12                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]                 
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']          
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 15                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]                 
+ 16                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]              
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 18                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]                 
+ 19                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]                           
+ 21                  -1  1   1969152  ultralytics.nn.modules.block.C2f             [768, 512, 1]                 
+ 22        [15, 18, 21]  1   2116435  ultralytics.nn.modules.head.Detect           [1, 16, None, [128, 256, 512]]
+Model summary: 130 layers, 11,135,987 parameters, 11,135,971 gradients, 28.6 GFLOPs
+
+Transferred 349/355 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+WARNING [34m[1mAMP: [0mchecks failed . AMP training on NVIDIA GeForce GTX 1650 GPU may cause NaN losses or zero-mAP results, so AMP will be disabled during training.
+[34m[1mtrain: [0mFast image access  (ping: 0.20.1 ms, read: 907.5526.7 MB/s, size: 847.3 KB)
+[K[34m[1mtrain: [0mScanning C:\Users\jorda\Downloads\Dark Vessel Detector\data\processed\ossdd\labels\train.cache... 595 images, 71 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 595/595 10.8Mit/s 0.0s
+[34m[1mval: [0mFast image access  (ping: 0.20.1 ms, read: 244.281.0 MB/s, size: 545.3 KB)
+[K[34m[1mval: [0mScanning C:\Users\jorda\Downloads\Dark Vessel Detector\data\processed\ossdd\labels\val.cache... 200 images, 58 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 200/200 15.8Mit/s 0.0s
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically... 
+[34m[1moptimizer:[0m AdamW(lr=0.002, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Plotting labels to C:\Users\jorda\Downloads\Dark Vessel Detector\runs\yolov8s\labels.jpg... 
+Image sizes 640 train, 640 val
+Using 2 dataloader workers
+Logging results to [1mC:\Users\jorda\Downloads\Dark Vessel Detector\runs\yolov8s[0m
+Starting training for 40 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+[K       1/40      7.75G      2.898      44.81     0.8824          8        640: 0% ──────────── 0/75  37.5s[K       1/40      7.75G      2.898      44.81     0.8824          8        640: 1% ──────────── 1/75 4.5s/it 38.8s<5:31[K       1/40      7.75G      3.275      74.03      1.138          8        640: 1% ──────────── 1/75 6.4s/it 46.2s<7:52[K       1/40      7.75G      3.142      56.51      1.137          8        640: 3% ──────────── 2/75 5.9s/it 51.2s<7:10[K       1/40      7.75G      3.277      52.66      1.158          8        640: 4% ──────────── 3/75 5.6s/it 56.3s<6:44[K       1/40      7.75G      3.127      44.87      1.139          8        640: 5% ╸─────────── 4/75 5.3s/it 1:01<6:20[K       1/40      7.75G      3.015      39.11      1.133          8        640: 7% ╸─────────── 5/75 5.2s/it 1:06<6:07[K       1/40      7.75G      2.936      35.25      1.135          8        640: 8% ╸─────────── 6/75 5.1s/it 1:11<5:55[K       1/40      7.75G      3.062      32.45      1.141          8        640: 9% ━─────────── 7/75 5.1s/it 1:16<5:47[K       1/40      7.75G      3.133      30.95      1.156          8        640: 11% ━─────────── 8/75 5.0s/it 1:21<5:33

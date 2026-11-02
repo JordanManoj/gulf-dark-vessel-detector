@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strait of Hormuz (Musandam - Larak/Qeshm narrows)",
+        "note": "Approx. 25 x 24 km box around ~26.5N, 56.3E covering the traffic separation scheme lanes. Sized to fit one Sentinel Hub Process API request at 10 m. Verify visually in Copernicus Browser before final runs.",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[56.20, 26.40], [56.45, 26.40], [56.45, 26.62], [56.20, 26.62], [56.20, 26.40]]]
+      }
+    }
+  ]
+}

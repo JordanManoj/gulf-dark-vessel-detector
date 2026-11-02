@@ -1,0 +1,20 @@
+# Core
+numpy>=2.0
+scipy>=1.13
+pandas>=2.2
+rasterio>=1.4        # windowed GeoTIFF reading (xView3 scenes are ~1.2 GB per band)
+shapely>=2.0
+requests>=2.32
+python-dotenv>=1.0
+matplotlib>=3.9
+
+# Model
+ultralytics>=8.4     # YOLOv8 + YOLO26
+torch>=2.5
+
+# Demo / presentation
+streamlit>=1.40
+python-pptx>=1.0
+
+# Tests
+pytest>=8.0

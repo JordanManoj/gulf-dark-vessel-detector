@@ -1,0 +1,13 @@
+{
+ "scene": "khalifa_port_2026-10-15.tif",
+ "acquisition_hour_utc": 2,
+ "detections": 13,
+ "ais_matched": 12,
+ "dark_candidates": 1,
+ "gfw_sar_detections": {
+  "matched": 6,
+  "unmatched": 3
+ },
+ "our_detections_near_a_gfw_detection": 5,
+ "method": "AIS presence (GFW, 0.01 deg cells, +-1 h, +-1 cell) - cell-level, not per-ship"
+}
