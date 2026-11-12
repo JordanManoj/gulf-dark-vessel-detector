@@ -9,6 +9,11 @@ Project 1 of 3 in *A Gulf Maritime Picture: three layers of intelligence for UAE
 | False alarms | 704 | **162 (−77 %)** |
 | Gulf, 15 Oct 2026 | | Khalifa Port: 1 dark candidate of 13 vessels · Hormuz anchorage: 16 of 40 |
 
+## Video (22 s)
+[![Dark Vessel Detector: project video. Click to open the full MP4 with sound](video/preview.gif)](video/dark-vessel-detector.mp4)
+
+▶ **[Watch the full video with sound (MP4, 22 s)](video/dark-vessel-detector.mp4)**
+
 ![Hormuz anchorage: teal = AIS ship nearby, red = dark candidate](presentation/figures/demo_gulf_hormuz_dark_slide.png)
 
 ---
@@ -160,5 +165,6 @@ Dark Vessel Detector/
 ├── results/                  metrics (JSON), predictions (CSV), figures, failure cases, Gulf outputs
 ├── scripts/                  training launchers
 ├── src/                      pipeline code (see docstrings; each module runs with python -m src.<name>)
-└── tests/                    unit tests on synthetic data
+├── tests/                    unit tests on synthetic data
+└── video/                    22 s project video (MP4) + GIF preview + poster
 ```
